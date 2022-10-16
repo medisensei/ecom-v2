@@ -1,0 +1,33 @@
+
+
+
+  <div class="row ">
+
+        <div class="mt-5 col-4" *ngFor="let product of productlist" >
+          <a href="#" >
+          <div class="card"  >
+                <img src={{product.thumbnail}} class="card-img-top " style="height:300px ;width:300px" alt="..." />
+                <div class="card-body">
+                  
+                  <div class="d-flex justify-content-between">
+                    <p class="small" >{{product.title}}</p>
+                    <div class="d-flex justify-content-end">
+                      
+                    <p class="small ">{{calculprice(product.price,product.discountPercentage)}}</p>
+                    <p class="small text-danger ms-2"><s>{{product.price}}</s></p>
+
+                  
+                  </div>
+                  </div>
+                
+                  </div>
+              
+              </div>
+            </a>
+        </div>
+       
+    </div>
+
+ 
+
+   

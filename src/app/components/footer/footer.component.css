@@ -1,0 +1,29 @@
+.csf{
+
+/* paragraph text */
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+
+/* sub text color */
+color: #8A8FB9;
+
+
+}
+
+.ft{
+    font-size: 18px;
+color: #000000;
+
+}
+
+.btn{
+
+    background: #FB2E86;
+    
+    color:white;
+   
+}
+

@@ -1,0 +1,14 @@
+.text-center {
+    text-align: left!important;
+}
+
+h2{
+    text-align: center!important;
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    line-height: 49px;
+    
+    /* Text */
+    color: #151875;
+
+}

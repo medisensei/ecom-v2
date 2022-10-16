@@ -1,0 +1,59 @@
+.h4{
+
+    /* caption title */
+    font-family: 'Josefin Sans';
+    font-size: 30px;
+    line-height: 49px;
+    
+    /* Text */
+    color: #151875;
+    
+    }
+
+    .linkcolor{
+
+ font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+        color: #151875;
+
+    }
+
+    .arival{
+
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FB2E86;
+
+    }
+
+
+    .btn{
+
+        background: #FB2E86;
+        color:white;
+       
+    }
+    .card-text
+    {
+        font-family: 'Josefin Sans';
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 120%;
+        
+        /* or 54px */
+        text-align: center;
+        letter-spacing: 0.015em;
+        
+        /* Text */
+        color: #151875;
+
+
+    }
+
+    

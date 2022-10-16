@@ -1,0 +1,81 @@
+<div class="gridview " style="height: 200px;">
+    <div class=" py-5 px-5  mx-5">
+        
+<h4><strong>Shop Grid Default</strong></h4>
+<p>path: > pages </p>
+
+    </div>
+</div>
+
+<div class="container mt-5 d-flex bd-highlight ">
+    <div class="p-2 flex-fill bd-highlight">
+        <h4 >Ecommerce Accesories & Fashion item</h4>
+        <p class="grey-text">About (,{{productlist.length}} results )</p>
+    </div>
+
+    <div class="d-flex justify-content-end pt-4">
+       
+        
+            <label class="px-2">Page: </label>
+            <select (change)="pageOnChange(pageselected)" style="max-height:35%;width:50px;" [(ngModel)]='pageselected' > 
+                <option [value]='10'>1</option>
+                <option [value]='20'>2</option>
+                <option [value]='30'>3</option>
+                <option [value]='40'>4</option>
+                <option [value]='50'>5</option>
+
+            </select>
+    
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="blue-text underline">Categories</h3>
+         
+              <div class="categories" *ngFor='let category of categoryList' ><input type="checkbox" (change)="checkValue(category, $event)" >  {{category}}</div>
+          
+
+           
+        </div>
+
+        <div class="col-9">
+
+
+            <!--products list -->
+             <div class="row p-2 bg-white border rounded" *ngFor="let product of productlist">
+                <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="{{product.thumbnail}}"></div>
+                <div class="col-md-6 mt-1">
+                    <h5>{{product.title}}</h5>
+                    <div class="d-flex flex-row">
+                        
+                        <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    </div>
+                    <div class="mt-1 mb-1 spec-1"><span class="text-primary" ><strong><u>{{product.category}}</u></strong></span><span class="dot"></span><span class="dot"></span></div>
+                    <div class="mt-1 mb-1 spec-1"><span>Unique design</span><span class="dot"></span><span>For men</span><span class="dot"></span><span>Casual<br></span></div>
+                    <p class="text-justify text-truncate para mb-0">{{product.description}}<br><br></p>
+                </div>
+                <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                    <div class="d-flex flex-row align-items-center">
+                        <h4 class="mr-1 px-3 ">${{calculprice(product.price,product.discountPercentage)}}</h4><span class="strike-text ms-2">${{product.price}}</span>
+                    </div>
+                    
+                    <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Details</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Add to wishlist</button></div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        
+
+        </div>
+
+
+        
+  
+
+
+</div>
